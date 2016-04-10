@@ -21,13 +21,13 @@ $GLOBALS['config'] = array(
 );
  */
 
-session_start();
+//session_start();
 
 spl_autoload_register(function($class){
 	require 'inc/classes/'.$class.'.class.php';
 });
 require_once 'functions.php';
-
+/*
 if(!file_exists('/pages/install/install.php')){
 	$db = DB::getInstance();
 	if(Cookies::exists(Config::get('session/cookie_name')) && !Session::exists(Config::get('session/session_name'))){
@@ -42,3 +42,4 @@ if(!file_exists('/pages/install/install.php')){
 	$error_reporting =(Setting::get('debug') == 'Off')? '0':'-1';
 	error_reporting($error_reporting);
 }
+*/

@@ -1,0 +1,9 @@
+Codes
+0 = Okay/Success
+1 = Wrong Link
+
+Message
+
+Update
+Returns true or false, if there is an update.
+
